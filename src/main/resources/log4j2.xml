@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="filename">resume.log</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </Console>
+        <File name="File-Appender" fileName="${filename}">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="tr.com.jowl" level="all" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+            <AppenderRef ref="File-Appender"/>
+        </Logger>
+        <Root level="all" >
+            <AppenderRef ref="Console-Appender"/>
+            <AppenderRef ref="File-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>
