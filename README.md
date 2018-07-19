@@ -43,7 +43,7 @@ INSTALLATION
         2. Type application Name
         3. Type the Git Repository 
 
-7. [Go-to application demo site](http://resume-ibrahimkarayel.a3c1.starter-us-west-1.openshiftapps.com/) 
+7. [Go-to application demo site](http://resume-ibrahimkarayel.1d35.starter-us-east-1.openshiftapps.com/) 
 
 ##### For free CV and cover Letter's  template visit:
 
